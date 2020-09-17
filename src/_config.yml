@@ -4,7 +4,7 @@
 
 # Site
 title: 大贤者初春令月
-subtitle: '致力于使用最少的语法糖与依赖库编写最紧凑的实现'
+subtitle: '致力于编写使用最少的语法特性和第三方库的紧凑实现'
 description: ''
 keywords:
 author: Kenji Mouri
