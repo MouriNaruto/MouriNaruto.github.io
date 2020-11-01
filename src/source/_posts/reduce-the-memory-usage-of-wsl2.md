@@ -37,3 +37,5 @@ WSL2 实质上是一个 Hyper-V 虚拟机，
 [wsl2]
 memory=4GB
 ```
+
+上述配置的实质的含义是配置 WSL2 对应的 Hyper-V 最多使用 4GB 内存，就这么简单。
