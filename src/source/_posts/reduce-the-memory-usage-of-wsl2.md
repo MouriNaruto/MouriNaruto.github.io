@@ -1,7 +1,12 @@
 ﻿---
 title: 减小 WSL2 的内存占用
 date: 2020-11-01 16:09:18
+categories:
+- [技术, Windows]
 tags:
+- 技术
+- Windows
+- WSL2
 ---
 
 前段日子重装了自己安装 Windows 10 的台式机里面的 Linux 子系统，
