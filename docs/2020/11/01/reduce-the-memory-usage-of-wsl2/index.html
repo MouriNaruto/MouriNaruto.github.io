@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="Kenji Mouri">
   <meta name="keywords" content="">
-  <title>Hello World - 大贤者初春令月</title>
+  <title>减小 WSL2 的内存占用 - 大贤者初春令月</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -52,7 +52,7 @@
 
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.1.1"></head>
+<meta name="generator" content="Hexo 5.2.0"></head>
 
 
 <body>
@@ -177,8 +177,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-09-17 04:59" pubdate>
-        2020年9月17日 凌晨
+      <time datetime="2020-11-01 16:09" pubdate>
+        2020年11月1日 下午
       </time>
     </span>
   
@@ -189,7 +189,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      75 字
+      449 字
     </span>
   
 
@@ -199,7 +199,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      4
        分钟
     </span>
   
@@ -229,22 +229,28 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">减小 WSL2 的内存占用</h1>
             
             <div class="markdown-body" id="post-body">
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="hljs bash">$ hexo server</code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="hljs bash">$ hexo generate</code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="hljs bash">$ hexo deploy</code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+              <p>前段日子重装了自己安装 Windows 10 的台式机里面的 Linux 子系统，
+顺便把子系统版本从 WSL1 迁移到了 WSL2。</p>
+<p>WSL2 实质上是一个 Hyper-V 虚拟机，
+只是里面跑的是微软为 Hyper-V 高度优化后的 Linux 内核，
+于是 WSL2 冷启动速度非常迅速，
+在我的台式机上不到一秒钟就能完成其冷启动全过程。</p>
+<p>由于 WSL2 实质是个虚拟机而不是 WSL1 那种把 Linux 系统调用翻译成 Windows 系统调用的方式，
+于是在 I/O 操作这种系统调用密集型操作上效率有了质的提升，
+而且还支持挂载 ext4 等 Windows 本身不支持的文件系统。</p>
+<p>然而我在用 WSL2 的一开始就因为使用 apt 安装 texlive 的时候发现内存占用爆表，
+最后研究了下是 Linux 内核文件缓存占了非常多的内存而且既然是缓存那么大概率是不会释放的，
+于是 Hyper-V 即使支持智能释放虚拟机空闲内存也起不了多少作用。</p>
+<p>据说 Windows 下一个大版本，也许是 21H2，会引入 WSL2 默认最多只能使用机器的 50% 物理内存的限制。
+然而下一个大版本还没有发布，而且也不确定微软是否会继续跳票，毕竟原本今年秋季就会有大更新。
+所以还是得要寻找手工配置的方法，看了下微软的文档很顺利地找到了。</p>
+<p>文档参考：<a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig">https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig</a></p>
+<p>于是我在用户配置目录下创建了 <code>.wslconfig</code> 文件，然后填入了以下内容保存后问题成功解决。</p>
+<pre><code class="hljs ini"><span class="hljs-section">[wsl2]</span>
+<span class="hljs-attr">memory</span>=<span class="hljs-number">4</span>GB</code></pre>
 
             </div>
             <hr>
@@ -403,7 +409,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Hello World&nbsp;",
+        "减小 WSL2 的内存占用&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
