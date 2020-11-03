@@ -423,11 +423,11 @@ links:
       title: 'Dism++ 官方网站',
       intro: '全新的 Windows 实用工具',
       link: 'http://www.chuyu.me/',
-      image: 'http://www.chuyu.me/images/logo.png'
+      image: '/img/links/chuyu.png'
     }
     - {
       title: "Chill Magic's Blog",
       intro: "魔王殿的博客",
       link: 'https://chillmagic.github.io/',
-      image: 'https://chillmagic.github.io/favicon.ico'
+      image: '/img/links/chillmagic.ico'
     }
