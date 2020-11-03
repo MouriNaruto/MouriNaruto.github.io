@@ -1,4 +1,4 @@
----
+﻿---
 title: about
 date: 2020-09-17 12:00:00
 layout: about
@@ -50,10 +50,11 @@ layout: about
 - [看雪论坛](https://bbs.pediy.com/user-home-881623.htm)
 - [吾爱破解](https://www.52pojie.cn/home.php?mod=space&uid=512260)
 
-<!-- ## 简历
+## 正式简历
 
-- [LaTeX](formal-resume-zh-cn/resume.tex)
-- [PDF](formal-resume-zh-cn/resume.pdf) -->
+- [中文 (PDF)](/assets/resume/resume_chinese.pdf)
+- [英文 (PDF)](/assets/resume/resume_english.pdf)
+- [源代码 (LaTeX)](https://github.com/MouriNaruto/MouriNaruto/tree/master/formal-resume)
 
 <!-- ## 注释
 
