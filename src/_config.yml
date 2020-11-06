@@ -109,3 +109,6 @@ deploy:
 marked:
   gfm: true
   breaks: false
+
+# hexo-all-minifier configuration
+all_minifier: true
