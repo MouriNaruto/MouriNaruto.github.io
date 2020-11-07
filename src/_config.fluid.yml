@@ -82,6 +82,7 @@ font:  # 主题字体配置
 
 custom_js:   # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js，支持列表
 custom_css:   # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css 同上，支持列表
+  - //at.alicdn.com/t/font_2188012_jkjop06z1g.css
 custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也可用于外部引入 js css 这些操作，注意不要和 post.custom 配置冲突
 
 web_analytics:  # 网页访问统计
@@ -395,6 +396,7 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
     - { class: 'iconfont icon-github-fill', link: 'https://github.com/MouriNaruto', tip: 'GitHub' }
     - { class: 'iconfont icon-zhihu-fill', link: 'https://www.zhihu.com/people/MouriNaruto', tip: '知乎' }
     - { class: 'iconfont icon-bilibili', link: 'https://space.bilibili.com/2957331', tip: '哔哩哔哩' }
+    - { class: 'iconfont icon-afdian-fill', link: 'https://afdian.net/@MouriNaruto', tip: '爱发电' }
     #- { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
 
 
