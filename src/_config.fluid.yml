@@ -439,3 +439,15 @@ links:
       link: 'https://www.sakuraneko.tech/',
       image: '/img/links/sakuraneko.png'
     }
+    - {
+      title: "lindexi",
+      intro: "林德熙 - Windows 10 App Developer",
+      link: 'https://blog.lindexi.com/',
+      image: '/img/links/lindexi.png'
+    }
+    - {
+      title: "walterlv",
+      intro: "吕毅 - walterlv",
+      link: 'https://blog.walterlv.com/',
+      image: '/img/links/walterlv.png'
+    }
