@@ -451,3 +451,9 @@ links:
       link: 'https://blog.walterlv.com/',
       image: '/img/links/walterlv.png'
     }
+    - {
+      title: "青春永不落幕",
+      intro: "一位网页设计和收集Windows平台软件的爱好者",
+      link: 'https://qcyblm.github.io/',
+      image: '/img/links/qcyblm.ico'
+    }
