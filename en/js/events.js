@@ -1,0 +1,15 @@
+HTMLElement.prototype.wrap=function(o){this.parentNode.insertBefore(o,this),this.parentNode.removeChild(this),o.appendChild(this)},Fluid.events={registerNavbarEvent:function(){var o=$("#navbar"),n=$("#navbar .dropdown-menu");0<o.offset().top&&(o.removeClass("navbar-dark"),n.removeClass("navbar-dark")),Fluid.utils.listenScroll(function(){o[50<o.offset().top?"addClass":"removeClass"]("top-nav-collapse"),n[50<o.offset().top?"addClass":"removeClass"]("dropdown-collapse"),0<o.offset().top?o.removeClass("navbar-dark"):o.addClass("navbar-dark"),n.removeClass("navbar-dark")}),$("#navbar-toggler-btn").on("click",function(){$(".animated-icon").toggleClass("open"),$("#navbar").toggleClass("navbar-col-show")})},registerParallaxEvent:function(){var t,e=$('#banner[parallax="true"]');0===e.length||0!==(t=$("#board")).length&&Fluid.utils.listenScroll(function(){var o=$(window).scrollTop()/5,n=96+parseInt(t.css("margin-top"),0);e.css({transform:"translate3d(0,"+(o=n<o?n:o)+"px,0)","-webkit-transform":"translate3d(0,"+o+"px,0)","-ms-transform":"translate3d(0,"+o+"px,0)","-o-transform":"translate3d(0,"+o+"px,0)"}),$("#toc")&&$("#toc-ctn").css({"padding-top":o+"px"})})},registerScrollDownArrowEvent:function(){var o=$(".scroll-down-bar");0!==o.length&&o.on("click",function(){Fluid.utils.scrollToElement("#board",-$("#navbar").height())})},registerScrollTopArrowEvent:function(){var n,t,e,o,r,a=$("#scroll-top-button");0===a.length||0!==(n=$("#board")).length&&(e=t=!1,(o=function(){var o=n[0].getClientRects()[0].right,o=document.body.offsetWidth-o;t=50<=o,a.css({bottom:t&&e?"20px":"-60px",right:o-64+"px"})})(),$(window).resize(o),r=n.offset().top,Fluid.utils.listenScroll(function(){var o=document.body.scrollTop+document.documentElement.scrollTop;e=r<=o,a.css({bottom:t&&e?"20px":"-60px"})}),a.on("click",function(){$("body,html").animate({scrollTop:0,easing:"swing"})}))},registerImageLoadedEvent:function(){if("NProgress"in window){var o=document.getElementById("banner");o&&(o=o.style.backgroundImage.match(/\((.*?)\)/)[1].replace(/(['"])/g,""),(n=new Image).onload=function(){window.NProgress&&window.NProgress.inc(.2)},n.src=o,n.complete&&n.onload());var n=$("main img:not([lazyload])"),t=n.length;for(const e of n){const r=e.onload;e.onload=function(){r&&r(),window.NProgress&&window.NProgress.inc(.5/t)},e.complete&&e.onload()}}},billboard:function(){"console"in window&&console.log(`
+------------------------------------------------
+|                                              |
+|     ________  __            _        __      |
+|    |_   __  |[  |          (_)      |  ]     |
+|      | |_ \\_| | | __   _   __   .--.| |      |
+|      |  _|    | |[  | | | [  |/ /'\`\\' |      |
+|     _| |_     | | | \\_/ |, | || \\__/  |      |
+|    |_____|   [___]'.__.'_/[___]'.__.;__]     |
+|                                              |
+|           Powered by Hexo x Fluid            |
+|         GitHub: https://git.io/JqpVD         |
+|                                              |
+------------------------------------------------
+    `)}};
