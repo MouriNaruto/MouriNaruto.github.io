@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Drop ARM32 support on the Windows platform</title>
+    <link href="/en/2021/05/17/Drop-ARM32-support-on-the-Windows-platform/"/>
+    <url>/en/2021/05/17/Drop-ARM32-support-on-the-Windows-platform/</url>
+    
+    <content type="html"><![CDATA[<p>For my deliberate consideration, The open source projects created or maintainedby myself will drop the ARM32 support on the Windows platform. Here are thereasons:</p><ul><li>The latest version of ARM32 version for Windows desktop is Redstone 2 InsiderBuild 15035. I know Windows RT 8.1 and Windows 10 IoT Core aren’t in the stage of end of support, but most of daily users are drop their devices (Windows RT 8.x tablets) or have a better solution (Windows 10 IoT Core userson Raspberry Pi devices should migrate to Linux or ARM64 version for Windows10 desktop).</li><li>Future ARM processors are deprecating ARM32 ISA support, and Apple Silicon M1had dropped the ARM32 support at all. So we can’t run ARM32 version of Windows desktop applications on these devices.</li><li>I’m considering the possibility of using Rust, .NET, and Project Reunion towrite a part of the implementation of some projects in the future, and theseinfrastructures will not reconsider support for ARM32 support on Windows.</li><li>Reduce the size of release package and make the continuous integrationfaster.</li></ul><p>Kenji Mouri</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notice</category>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Notice</tag>
+      
+      <tag>Windows</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>

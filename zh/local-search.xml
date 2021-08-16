@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>在 Windows 平台上移除 ARM32 支持</title>
+    <link href="/zh/2021/05/17/Drop-ARM32-support-on-the-Windows-platform/"/>
+    <url>/zh/2021/05/17/Drop-ARM32-support-on-the-Windows-platform/</url>
+    
+    <content type="html"><![CDATA[<p>经过审慎考虑，在我为主要维护者的开源项目（譬如 NSudo）的未来版本将会移除 ARM32 支持，主要原因如下：</p><ul><li>Windows ARM32 桌面版本停滞在 Redstone 2 Insider Build 15035，虽然 ARM32 版本还有 Windows RT 8.1 和 Windows 10 IoT Core 系列没有结束支持，然而估计绝大部分非考古用途人士基本已经放弃使用相关设备（Windows RT 8.x 平板）和有更好的替代品（树莓派上使用 IoT Core ARM32 其实不如直接迁移到 Linux 或者 Windows 10 ARM64 桌面版本）。</li><li>未来的 ARM 处理器将会砍掉 ARM32 指令集支持，其实 Apple Silicon M1 已经这么做了，所以在该设备上跑的 Windows 10 ARM64 桌面版应该并不支持 ARM32 应用（毕竟 ARM64 下的 ARM32 应用支持和 x64 下的 x86 应用支持原理类似，都是硬件直接执行而不是仿真）。</li><li>对未来采用 Rust, .NET 和 Project Reunion 编写部分实现的可能性的考量，这些设施在 Windows 下大概率不会重新考虑支持 ARM32 应用开发支持。</li><li>减小发行包的体积、加快连续集成执行速度。</li></ul><p>毛利</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>公告</category>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>公告</tag>
+      
+      <tag>Windows</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>一些关于 Windows 高 DPI 支持的笔记</title>
+    <link href="/zh/2021/01/05/some-notes-about-windows-high-dpi-support/"/>
+    <url>/zh/2021/01/05/some-notes-about-windows-high-dpi-support/</url>
+    
+    <content type="html"><![CDATA[<p>前段日子，刚好遇到了一些和 Windows 高 DPI 支持有关的事情，我按照自己的经验做了一些勘误和解答了一些问题，以下是相关内容。</p><ul><li>关于对友人 walterlv 的博文进行的勘误（经我勘误的内容已加入原博文）<a href="https://blog.walterlv.com/post/windows-high-dpi-development.html">https://blog.walterlv.com/post/windows-high-dpi-development.html</a></li><li>关于对老鸭子的 YY-Thunks 项目的 ForDpi 相关 API 兼容实现的细节（等鸭子实现后再更新）</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Windows</tag>
+      
+      <tag>笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>从北京到《赛博朋克 2077》</title>
+    <link href="/zh/2020/12/18/from-beijing-to-cyberpunk-2077/"/>
+    <url>/zh/2020/12/18/from-beijing-to-cyberpunk-2077/</url>
+    
+    <content type="html"><![CDATA[<p>自从上个月的 23 日到达北京，与线上的一个友人见了一面并找到新的工作之后，就于此安顿下来。我看了看日历，看起来在北京呆了差不多一个月的，也是写点感触的时候了，顺便写最近购买的新出的《赛博朋克 2077》。</p><p>首先，我在 23 日遇到的友人经历传奇到令人肃然起敬，但是却非常低调。为了使友人能够不受打扰，在写公开内容的地方，还是不说为妙。</p><p>这篇文章这么命名的原因，主要也是希望通过写对《赛博朋克 2077》的感受顺便大致描述下我在北京的经历。</p><p>首先，《赛博朋克 2077》的新手引导个人觉得是比波兰蠢驴的上一款口碑之作《巫师3：狂猎》和米忽悠家的《原神》要友好的。至少对于我这样的玩家是这样的，基本上不会因为找不到东西而使得自己在新手引导卡住。</p><p>个人觉得新手引导的友好与否直接关乎到一个游戏是否能玩的下去，毕竟就是因为这个原因使得我玩了一天《巫师3：狂猎》才突破新手引导，毕竟杰洛特有个东西很难找。就像我大概一个月前刚到北京，如果没有我的母亲的协助的话，我也不可能很快的在北京安顿下来，说不定会弃坑。</p><p>夜之城的描绘则让我想到了北京，尤其是我暂时居住的地方，夜间和白天基本上一样繁华。再加上即使不开光线追踪的夜之城的渲染效果足够真实，让我总会想到现实生活。</p><p>倒是当时我差点选择公司开头，而不是流浪者，当然我玩的角色是个女孩子，其捏脸系统虽然不能说非常强悍，但是也让我陷入了深深的困扰，最后点了随机按钮，选择了我感觉还 OK 的外貌。倒是使用女性角色的话，你应该会感受到主角的声音非常御姐，感觉和 B 站的某个 up 主声线类似。</p><p>其驾驶系统体验挺糟糕的，让我想起了曾经我还在学校的自动驾驶实验室里摸索过的某个自动驾驶训练数据集里面训练用的一个叫Torcs 的一个跨平台的老游戏。其驾驶视角非常容易变更，不能自动跟随，于是驾驶不是很舒服。其实射击的感觉也是，感觉有点不真实。</p><p>由于我是 PC 玩家，于是没有体验到非常糟糕的主机优化。倒是……这家伙不开光追感觉拉不开特效的差距。不开光追的最高和最低特效，也就是 24 帧到 56 帧的感受，在我的笔记本上的 1060 的确是这样的。波兰蠢驴依然和以前一样有诚意，我作为从 GOG 购买的用户，额外附赠的内容还是挺不错的。其配乐倒是和巫师不同，没那么丰富比较同质化。游戏的细节做的也很认真，我主要指的是纹理和音效，还有本地化做的相当不错。</p><p>但是，我却隐约觉得波兰蠢驴没有把自己的诚意发挥在恰当的地方。譬如游戏的驾驶和射击感受，我没有体验到的海量 Bug 还有主机端的糟糕优化。</p><p>我虽然对开放世界表示不是很适应，比较能探索的内容太多会让人迷失方向。然而，赛博朋克类型的游戏不大一样，需要一些多变性的场景，否则会让人感觉在强制接受他人的经历一样。</p><p>关于这家伙跳票数次，我感觉主要原因有二，一要等英伟达的新款显卡，二因为前段日子蠢驴压榨事件而导致无法继续压榨员工于是只能跳票。说到压榨，游戏开发者从去年到今年经历了 996，让我想到了三个月前还在实验室 007 的自己。我也知道游戏是一个随时都会有大变更的项目，而且对内容的要求越来越多……于是新游戏多次跳票应该是未来的常态吧。</p><p>由于最近事情比较多，于是我卸载了这款游戏，于是我的机器上也回到了以前的没有安装第三方游戏的状态。只是为了在事情结束后再次游玩，顺便也算是跟进波兰蠢驴的对游戏口碑问题的应对方案了。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>游戏</category>
+      
+      <category>赛博朋克 2077</category>
+      
+      <category>生活</category>
+      
+      <category>北京</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>游戏</tag>
+      
+      <tag>赛博朋克 2077</tag>
+      
+      <tag>生活</tag>
+      
+      <tag>北京</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>在我的博客仓库使用连续集成</title>
+    <link href="/zh/2020/12/06/using-ci-in-my-blog-repo/"/>
+    <url>/zh/2020/12/06/using-ci-in-my-blog-repo/</url>
+    
+    <content type="html"><![CDATA[<p>众所周知，我的这个基于 hexo 的博客是托管在一个 GitHub 仓库之中。</p><p>由于每次更新博客都需要自己通过命令行进行手动生成，所以我打算在我的博客仓库引入连续集成以实现自动构建。</p><p>一开始，我想参照我的友人落樱的博客仓库的做法，然而他用的连续集成服务我之前并没有注册过。</p><p>为了究极的偷懒，于是我去网上搜寻如何使用 AppVeyor 连续集成服务自动构建基于 hexo 的博客的文章。</p><p>首先，读者可以通过下述我也参阅过的文章去了解如何使用 AppVeyor 连续集成服务自动构建基于 hexo 的博客。</p><ul><li><a href="https://www.jianshu.com/p/58cca2054d80">Github Hexo AppVeyor个人博客搭建和持续集成</a></li><li><a href="https://blog.csdn.net/Mculover666/article/details/94837390">【Hexo搭建个人博客】（十一）使用Appveyor持续集成博客（备份Hexo博客源文件）</a></li></ul><p>毕竟，我也想偷懒，那么我也不会写其他人都会写到的内容。</p><p>当然，我也知道，如果不写点与众不同的内容，那么也对不起浪费了宝贵时间更新博客的自己。</p><p>于是，我说点我遇到的我看到的文章没有谈到的事情吧。</p><p>首先，是 AppVeyor CI 预装的 Node.js 版本过旧的问题，导致我的博客包无法正确编译。</p><p>当然，在踩过了一些坑后，解决方案也很简单，可以参阅下述内容就能轻松的解决。</p><ul><li><a href="https://github.com/appveyor/ci/issues/2921">Node 12.0 support · Issue #2921 · appveyor/ci</a></li><li><a href="https://github.com/atom/fs-admin/blob/master/appveyor.yml">fs-admin/appveyor.yml at master · atom/fs-admin</a></li></ul><p>其次，我为了更方便的管理我的个人事务，我的博客仓库从 <a href="https://github.com/MouriNaruto/MouriNaruto.github.io">https://github.com/MouriNaruto/MouriNaruto.github.io</a>迁移到了 <a href="https://github.com/MouriNaruto/MouriNaruto/tree/master/blog-source%E3%80%82">https://github.com/MouriNaruto/MouriNaruto/tree/master/blog-source。</a></p><p>毕竟 GitHub 前段日子出了个新特性，在个人的账户下放一个和个人 ID 同名的仓库可以在 GitHub 上显示特定的内容。</p><p>我觉得，既然可以这么做，那么我就把和个人介绍有关的全部内容放在这个仓库好了，这也是我这么做的理由。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>部署</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>部署</tag>
+      
+      <tag>CI</tag>
+      
+      <tag>AppVeyor</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>我的一些在 shapez.io 中的设计</title>
+    <link href="/zh/2020/11/02/share-my-design-in-shapez-io/"/>
+    <url>/zh/2020/11/02/share-my-design-in-shapez-io/</url>
+    
+    <content type="html"><![CDATA[<p>在三天前，我的友人魔王殿给我推荐了一款 shapez.io 的游戏。我大概玩了 20 个小时，感觉这是一款自动化生成类型的开源的沙盒游戏。这款游戏非常不错，只是我今天把其卸载了，毕竟我不想让自己沉迷其中。说的这么冠冕堂皇，其实还是接下来一段时间我需要一些重要的事情而已。（笑）</p><p>虽然是卸载了，但是过段时间我应该还会再次游玩，为了保险起见我备份了自己的存档。顺便分享下我在其中做的一些设计，当然魔王殿在这方面指点了我不少。</p><p>由于 shapez.io 只提供红绿蓝三色的直接采集，其他四色即白黄青紫需要使用颜色合成单元进行合成。</p><p>首先展示一下三色颜料合成机，也就是白色合成机的实现。</p><p><img src="three_colour_compositor.png" alt="三色颜料合成机"></p><p>由于传送带的速度为 6 个每秒，而颜色合成单元的速度为 0.6 个每秒，于是需要对其进行并行化。在这里我们只需要采用均衡器和隧道来实现把原色尽可能多的分配个颜色处理单元，然后最后使用合并器对结果进行合并，以提升传送带的利用效率。</p><p>依葫芦画瓢，同理可得双色颜料合成机，也就是黄色、青色和紫色合成机的实现。</p><p><img src="two_colour_compositor.png" alt="双色颜料合成机"></p><p>为了更好的使用采集与合成的颜料，于是我打算对其进行中心化管理，这是我引入调色盘概念的原因。下面两图分别是调色盘前端和和调色盘整体的实现。</p><p><img src="colour_palette_frontend.png" alt="调色盘前端"></p><p><img src="colour_palette_overview.png" alt="调色盘整体"></p><p>由于在后面的关卡解锁了蓝图，终于可以在其中有条件的复制粘贴了，虽然要耗费某种最终材料，下文简称蓝图。为了更方便的复制粘贴，所以我对蓝图的制造实现了自动化，下图是其整体结构。</p><p><img src="blueprint_producer_overview.png" alt="蓝图制造机整体"></p><p>虽然看起来比较复杂，但如果按照前面制造颜料合成机的方式，制造着色器和合并机就不会感觉到困难。当然，你说造起来比较麻烦，其实也不一定。因为之前解锁蓝图的时候会预先制造一些蓝图，于是你可以对一些简单的单元进行复制粘贴。详细结构可参考下图。</p><p><img src="blueprint_producer_detail.png" alt="蓝图制造机详细"></p><p>由于该游戏的通关和基本制造单元的升级条件需要制造一些奇形怪状的图形，于是设计一个高效率的切割机是必由之路。由于该游戏要求比较多，所以我只展示最基本的实现，也就是对对称图形进行切割然而输出其上半或下半部分。</p><p><img src="half_cutter.png" alt="上半和下半切割机"></p><p>对并行化的着色器、合并机和切割机的设计进行调整和组合，可以满足该游戏的大部分要求。譬如这是一个生成由四个直角梯形组成的风车图形的制造单元。</p><p><img src="complex_product_producer.png" alt="复杂单元制造"></p><p>由于我通过了第十五关，解锁了仓库，仓库可以帮助玩家更好的计划物件的生产，个人觉得这玩意类似计算机中缓冲区的概念。这是我的简单并行仓库，主要是为了通过第十六关，虽然真正通过估计要过段时间了。</p><p><img src="buffer_design.png" alt="并行仓库"></p><p>当然忘记说了，shapez.io 要通关的话，所有的产物都得交给基地，下图展示下这个要求颇多的物件。</p><p><img src="base.png" alt="基地"></p><p>总之，这游戏挺好玩的，感谢魔王殿的推荐，笑。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>游戏</category>
+      
+      <category>shapez.io</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>游戏</tag>
+      
+      <tag>shapez.io</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>减小 WSL2 的内存占用</title>
+    <link href="/zh/2020/11/01/reduce-the-memory-usage-of-wsl2/"/>
+    <url>/zh/2020/11/01/reduce-the-memory-usage-of-wsl2/</url>
+    
+    <content type="html"><![CDATA[<p>前段日子重装了自己安装 Windows 10 的台式机里面的 Linux 子系统，顺便把子系统版本从 WSL1 迁移到了 WSL2。</p><p>WSL2 实质上是一个 Hyper-V 虚拟机，只是里面跑的是微软为 Hyper-V 高度优化后的 Linux 内核，于是 WSL2 冷启动速度非常迅速，在我的台式机上不到一秒钟就能完成其冷启动全过程。</p><p>由于 WSL2 实质是个虚拟机而不是 WSL1 那种把 Linux 系统调用翻译成 Windows 系统调用的方式，于是在 I/O 操作这种系统调用密集型操作上效率有了质的提升，而且还支持挂载 ext4 等 Windows 本身不支持的文件系统。</p><p>然而我在用 WSL2 的一开始就因为使用 apt 安装 texlive 的时候发现内存占用爆表，最后研究了下是 Linux 内核文件缓存占了非常多的内存而且既然是缓存那么大概率是不会释放的，于是 Hyper-V 即使支持智能释放虚拟机空闲内存也起不了多少作用。</p><p>据说 Windows 下一个大版本，也许是 21H2，会引入 WSL2 默认最多只能使用机器的 50% 物理内存的限制。然而下一个大版本还没有发布，而且也不确定微软是否会继续跳票，毕竟原本今年秋季就会有大更新。所以还是得要寻找手工配置的方法，看了下微软的文档很顺利地找到了。</p><p>文档参考：<a href="https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig">https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig</a></p><p>于是我在用户配置目录下创建了 <code>.wslconfig</code> 文件，然后填入了以下内容保存后问题成功解决。</p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-section">[wsl2]</span><br><span class="hljs-attr">memory</span>=<span class="hljs-number">4</span>GB<br></code></pre></td></tr></table></figure><p>上述配置的实质的含义是配置 WSL2 对应的 Hyper-V 最多使用 4GB 内存，就这么简单。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Windows</tag>
+      
+      <tag>技术</tag>
+      
+      <tag>WSL2</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
