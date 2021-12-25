@@ -4,6 +4,47 @@
   
   
   <entry>
+    <title>Share my experience of implementing context menu support for File Explorer in Windows 11</title>
+    <link href="/en/2021/12/25/Share-my-experience-of-implementing-context-menu-support-for-File-Explorer-in-Windows-11/"/>
+    <url>/en/2021/12/25/Share-my-experience-of-implementing-context-menu-support-for-File-Explorer-in-Windows-11/</url>
+    
+    <content type="html"><![CDATA[<p>Hi, I’m Kenji Mouri, the creator of <a href="https://github.com/M2Team/NanaZip">NanaZip</a>, it may be the first third-partyopen-source file archiver which implements context menu support for File Explorer in Windows 11. I want to share my experience in this article because many friends ask me for learning how to implement that since I have released NanaZip1.0 Preview 1.</p><p>Many users and developers may notice that the context menus from their favourite apps won’t show in the context menu inWindows 11, which is implemented with XAML Islands. They need to click “Show more options” in the new context menu for accessing the context menu item they want to use via the legacy context menu.</p><p>I noticed it when Microsoft released the first insider preview of Windows 11 in late June, and I had waited for two months and found no third-party file archiver which implements context menu support for File Explorer in Windows 11. Ithought I need to create a file archiver to improve my user experience when I use Windows 11 in my main rig after October 5, 2021, because as a professional Windows desktop app developer, I need to pay attention to the latest Windowsplatform. Because I am a 7-Zip enthusiast, so I forked the source code tree of 7-Zip.</p><h2 id="The-requirements-for-implementing-context-menu-support-for-File-Explorer-in-Windows-11"><a href="#The-requirements-for-implementing-context-menu-support-for-File-Explorer-in-Windows-11" class="headerlink" title="The requirements for implementing context menu support for File Explorer in Windows 11"></a>The requirements for implementing context menu support for File Explorer in Windows 11</h2><p>According to <a href="https://blogs.windows.com/blog/2021/07/19/extending-the-context-menu-and-share-dialog-in-windows-11/">the article posted in Windows Blog</a>,we know that we need to use IExplorerCommand to implement the context menu and make it run under the app identity.</p><p>There are two ways for getting app identity, packaging the full app into the MSIX package or use Sparse Manifests if you want to make your app unpackaged. So, the AppX manifest is required.</p><h2 id="Implement-the-IExplorerCommand-interface"><a href="#Implement-the-IExplorerCommand-interface" class="headerlink" title="Implement the IExplorerCommand interface"></a>Implement the IExplorerCommand interface</h2><p>I think implement a simple context menu with the IExplorerCommand interface is easy, but due to the limitations of the IExplorerCommand interface, we can’t implement something like preview images in the context menu.</p><p>Also, we can only show 16 items for maximum in one context menu handler, I have used the Google but I can’t find any documents from Microsoft for describing the limitation. But I know the separator is not counted in the limitation, andyou can define multiple context menu handlers to bypass the limitation.</p><p>As we all know, the context menu in Windows 11 will cascade items from apps with more than 1 verb. So I suggest you make your context menu only in cascaded mode for a universal user experience when the user uses the legacy context menuvia clicking “Show more options”.</p><h2 id="The-choices-when-I-implement-the-NanaZip"><a href="#The-choices-when-I-implement-the-NanaZip" class="headerlink" title="The choices when I implement the NanaZip"></a>The choices when I implement the NanaZip</h2><p>I had chosen packaging NanaZip into the MSIX package because I wanted to submit it to the Microsoft Store.</p><p>Due to the limitations of the context menu in Windows 11, NanaZip only have the cascaded mode and merge CRC SHA itemsinto the archiver items and split them with the separator.</p><h2 id="My-suggestions-for-Microsoft"><a href="#My-suggestions-for-Microsoft" class="headerlink" title="My suggestions for Microsoft"></a>My suggestions for Microsoft</h2><p>I hope we have a modern way to implement the drag-and-drop context menu. </p><p>The App Model should be more polished, many Windows instances can’t load the context menu from third-party packaged appbefore restarting the File Explorer via Task Manager.</p><h2 id="Afterword"><a href="#Afterword" class="headerlink" title="Afterword"></a>Afterword</h2><p>As a 7-Zip enthusiast and an open-source lover. I want everyone not only to know this is a 7-Zip derivative, but alsoto make people know it’s a project created by me.</p><p>I have searched for a proper name for half a month, and finally I decided to use NanaZip as the name of file archiver. Here are the reasons.</p><ul><li>All names of the user-oriented open-source projects created by myself is started with the <code>N</code> letter because my ID is<code>MouriNaruto</code>, some of my friends use <code>N-series</code> to call projects created by me.</li><li><code>Nana</code> is the romaji of <code>なな</code>, means seven in Japanese. It will make people know NanaZip is a 7-Zip derivative if they know a little Japanese because this is a pun which is easy to understand.</li><li>The return value of <code>strlen(&quot;NanaZip&quot;)</code> is 7, it’s also a nice pun.</li></ul><p>This is the first article of development stories from projects created or maintained by me. I will write more.</p><p>I hope the article can give some help for Windows desktop app developers. Thanks for reading.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Technologies</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows Apps</category>
+      
+      <category>Development</category>
+      
+      <category>Experience</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Technologies</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows Apps</tag>
+      
+      <tag>Development</tag>
+      
+      <tag>Experience</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Use VC-LTL in your C++/WinRT UWP projects</title>
     <link href="/en/2021/11/25/Use-VC-LTL-in-your-Cpp-WinRT-UWP-projects/"/>
     <url>/en/2021/11/25/Use-VC-LTL-in-your-Cpp-WinRT-UWP-projects/</url>
@@ -531,26 +572,26 @@
     
     <categories>
       
-      <category>技术</category>
+      <category>Technologies</category>
       
       <category>Windows</category>
       
-      <category>Windows 研究笔记</category>
+      <category>Windows Research Notes</category>
       
-      <category>用户模式</category>
+      <category>User Mode</category>
       
     </categories>
     
     
     <tags>
       
+      <tag>Technologies</tag>
+      
       <tag>Windows</tag>
       
-      <tag>技术</tag>
+      <tag>Windows Research Notes</tag>
       
-      <tag>Windows 研究笔记</tag>
-      
-      <tag>用户模式</tag>
+      <tag>User Mode</tag>
       
     </tags>
     
