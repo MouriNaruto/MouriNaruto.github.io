@@ -4,6 +4,47 @@
   
   
   <entry>
+    <title>The way to submit a headless app to the Microsoft Store</title>
+    <link href="/en/2021/12/27/The-way-to-submit-a-headless-app-to-the-Microsoft-Store/"/>
+    <url>/en/2021/12/27/The-way-to-submit-a-headless-app-to-the-Microsoft-Store/</url>
+    
+    <content type="html"><![CDATA[<p>When I was developing <a href="https://github.com/M2Team/NanaZip">NanaZip</a>, I had met the error when I upload my MSIX packageto the Microsoft Store. Here is the error message.</p><blockquote><p>Package acceptance validation error: The package file NanaZipPackage_1.0.18.0_ARM64.msix specifies a headless app.  You don’t have permission to create a headless app. Please update AppListEntry=”none” in the AppxManifest file and   also ensure you have the waiver “HeadlessAppBypass” associated to this app. </p></blockquote><p>Set <code>AppListEntry=&quot;none&quot;</code> for the entries of command line version of NanaZip is necessary because it’s not a good userexperience when showing the entries of command line version of NanaZip to the Start menu. So, this is why the command line version wasn’t included in NanaZip 1.0 Preview 1.</p><p>A good guy called <a href="https://github.com/be5invis">be5invis</a> has created the issue for suggesting NanaZip should expose execution alias of command line version. I told him why I wasn’t able to do that and he gave me a solution. So, The command line version of NanaZip has been finally added in 1.0 Preview 2.</p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>To request the HeadlessAppBypass waiver, send an email to <code>storeops@microsoft.com</code> with the app ID (12 character tokenavailable from the dashboard). The waiver needs to be applied <em>before</em> uploading the package (as of December 2021).</p><p>When the progress is successful, you will receive the reply with the following words.</p><blockquote><p>Thank you for contacting us. We have enabled the HeadlessAppBypass waiver for the requested product.</p></blockquote><h2 id="Afterword"><a href="#Afterword" class="headerlink" title="Afterword"></a>Afterword</h2><p>You can read the original solution <a href="https://github.com/M2Team/NanaZip/issues/4#issuecomment-929720303">here</a>. It’s <a href="https://github.com/python/cpython/blob/main/PC/store_info.txt">originally</a> used in the Microsoft Store version of Python. I have do some revisions for accelerating the progress.</p><p>I hope the article can give some help for Windows desktop app developers. Thanks for reading.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Technologies</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows Apps</category>
+      
+      <category>Development</category>
+      
+      <category>Experience</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Technologies</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows Apps</tag>
+      
+      <tag>Development</tag>
+      
+      <tag>Experience</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Set Windows Application Packaging project with multiple referenced projects to a common output folder</title>
     <link href="/en/2021/12/26/Set-Windows-Application-Packaging-project-with-multiple-referenced-projects-to-a-common-output-folder/"/>
     <url>/en/2021/12/26/Set-Windows-Application-Packaging-project-with-multiple-referenced-projects-to-a-common-output-folder/</url>
