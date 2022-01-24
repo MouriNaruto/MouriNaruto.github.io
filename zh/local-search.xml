@@ -4,6 +4,170 @@
   
   
   <entry>
+    <title>使用 Task Dialog 对 Win32 Message Box 进行现代化</title>
+    <link href="/zh/2021/12/31/Modernize-Win32-Message-Box-with-Task-Dialog/"/>
+    <url>/zh/2021/12/31/Modernize-Win32-Message-Box-with-Task-Dialog/</url>
+    
+    <content type="html"><![CDATA[<p>本文仅有英文版，可以<a href="https://mouri.moe/en/2021/12/31/Modernize-Win32-Message-Box-with-Task-Dialog/">点此</a>阅读英文版，阅读完毕后可点击导航栏的<code>中文</code>按钮返回中文博客。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows 应用</category>
+      
+      <category>开发</category>
+      
+      <category>体验</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows 应用</tag>
+      
+      <tag>开发</tag>
+      
+      <tag>体验</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>向微软商店提交 headless 应用的方法</title>
+    <link href="/zh/2021/12/27/The-way-to-submit-a-headless-app-to-the-Microsoft-Store/"/>
+    <url>/zh/2021/12/27/The-way-to-submit-a-headless-app-to-the-Microsoft-Store/</url>
+    
+    <content type="html"><![CDATA[<p>本文仅有英文版，可以<a href="https://mouri.moe/en/2021/12/27/The-way-to-submit-a-headless-app-to-the-Microsoft-Store/">点此</a>阅读英文版，阅读完毕后可点击导航栏的<code>中文</code>按钮返回中文博客。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows 应用</category>
+      
+      <category>开发</category>
+      
+      <category>体验</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows 应用</tag>
+      
+      <tag>开发</tag>
+      
+      <tag>体验</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>设置具有多个引用项目的 Windows 应用程序打包项目的输出目录</title>
+    <link href="/zh/2021/12/26/Set-Windows-Application-Packaging-project-with-multiple-referenced-projects-to-a-common-output-folder/"/>
+    <url>/zh/2021/12/26/Set-Windows-Application-Packaging-project-with-multiple-referenced-projects-to-a-common-output-folder/</url>
+    
+    <content type="html"><![CDATA[<p>本文仅有英文版，可以<a href="https://mouri.moe/en/2021/12/26/Set-Windows-Application-Packaging-project-with-multiple-referenced-projects-to-a-common-output-folder/">点此</a>阅读英文版，阅读完毕后可点击导航栏的<code>中文</code>按钮返回中文博客。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows 应用</category>
+      
+      <category>开发</category>
+      
+      <category>体验</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows 应用</tag>
+      
+      <tag>开发</tag>
+      
+      <tag>体验</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>分享我的实现 Windows 11 文件资源管理器上下文菜单支持的经验</title>
+    <link href="/zh/2021/12/25/Share-my-experience-of-implementing-context-menu-support-for-File-Explorer-in-Windows-11/"/>
+    <url>/zh/2021/12/25/Share-my-experience-of-implementing-context-menu-support-for-File-Explorer-in-Windows-11/</url>
+    
+    <content type="html"><![CDATA[<p>本文仅有英文版，可以<a href="https://mouri.moe/en/2021/12/25/Share-my-experience-of-implementing-context-menu-support-for-File-Explorer-in-Windows-11/">点此</a>阅读英文版，阅读完毕后可点击导航栏的<code>中文</code>按钮返回中文博客。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows 应用</category>
+      
+      <category>开发</category>
+      
+      <category>体验</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows 应用</tag>
+      
+      <tag>开发</tag>
+      
+      <tag>体验</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>在你的 C++/WinRT UWP 项目中使用 VC-LTL</title>
     <link href="/zh/2021/11/25/Use-VC-LTL-in-your-Cpp-WinRT-UWP-projects/"/>
     <url>/zh/2021/11/25/Use-VC-LTL-in-your-Cpp-WinRT-UWP-projects/</url>
