@@ -4,6 +4,47 @@
   
   
   <entry>
+    <title>使用 GitHub 仓库托管符号服务器</title>
+    <link href="/zh/2022/02/06/Use-GitHub-repository-to-host-symbol-server/"/>
+    <url>/zh/2022/02/06/Use-GitHub-repository-to-host-symbol-server/</url>
+    
+    <content type="html"><![CDATA[<p>按照 Windows 调试符号服务器搭建的相关文档，在 GitHub 上做了个模板。</p><p>模板地址：<a href="https://github.com/ProjectMile/Mile.LocalSymbolStoreTemplate">https://github.com/ProjectMile/Mile.LocalSymbolStoreTemplate</a></p><h2 id="补充记录"><a href="#补充记录" class="headerlink" title="补充记录"></a>补充记录</h2><p>做这个模板本来是因为初雨技术群的猫总提到了可以自己搭建符号服务器，于是个人觉得也许可以白嫖一下 GitHub。</p><p>但实际上这样做并并不可行，如果用 Git LFS 价格挺贵的，如果不用 Git LFS 则单个文件无法超过 100MB。</p><p>但这个模板依然适合构建本地离线符号服务器。</p><p>总之，希望能有人因此能够得到帮助，感谢阅读。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows 应用</category>
+      
+      <category>开发</category>
+      
+      <category>体验</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows 应用</tag>
+      
+      <tag>开发</tag>
+      
+      <tag>体验</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>宣布 Mile.FFmpeg - 在 Windows 下使用的 FFmpeg 合并版动态链接库</title>
     <link href="/zh/2022/01/26/Introducing-Mile-FFmpeg-The-merged-FFmpeg-dynamic-linked-library-for-the-Windows/"/>
     <url>/zh/2022/01/26/Introducing-Mile-FFmpeg-The-merged-FFmpeg-dynamic-linked-library-for-the-Windows/</url>
