@@ -4,6 +4,80 @@
   
   
   <entry>
+    <title>成为新 Microsoft MVP 后的注意事项</title>
+    <link href="/zh/2022/02/16/Notes-for-becoming-a-new-Microsoft-MVP/"/>
+    <url>/zh/2022/02/16/Notes-for-becoming-a-new-Microsoft-MVP/</url>
+    
+    <content type="html"><![CDATA[<p>首先我自豪的宣布，我成功当选了 2022 年 2 月的 Windows Development 方向的 Microsoft MVP，顺便贴两张图证明一下。</p><p><img src="Certificate.png" alt="证书"></p><p><img src="Awardbox.png" alt="奖杯"></p><p>P.S. 水晶奖杯挺帅的，还有就是真的可以用笔名兼英文名参与 Microsoft MVP 评选让自己的心结少了一些。</p><p>东西展示完了，就该说点成功评上 Microsoft MVP 后进行的一些初始操作时遇到的坑和我对应的解决方案。虽然大部分问题都可以参阅<a href="https://github.com/newbe36524/MVP-on-board">https://github.com/newbe36524/MVP-on-board</a> 里面的内容解决，但我还是遇到了没有被该文档提到的问题，这也是本文需要描述的。</p><h2 id="签署-NDA-的时候在线签署向导一直卡在生成-PDF-的提示页面"><a href="#签署-NDA-的时候在线签署向导一直卡在生成-PDF-的提示页面" class="headerlink" title="签署 NDA 的时候在线签署向导一直卡在生成 PDF 的提示页面"></a>签署 NDA 的时候在线签署向导一直卡在生成 PDF 的提示页面</h2><p>每一个 Microsoft MVP 都需要签署 NDA 后才能享受到 Microsoft MVP 的权益，于是需要第一时间签署 NDA。</p><p>然而在线签署向导会卡在生成 PDF 的提示页面，通过使用 F12 开发者工具粗略看了下，看起来在想签署向导的 PDF 生成模块和 Chromium 内核的 Microsoft Edge 不大兼容。</p><p>解决方案也很简单，使用 Chromium 内核的 Microsoft Edge 的 Internet Explorer 模式，或者直接掏出虚拟机进入旧版 Windows打开 Internet Explorer 去进行 NDA 的在线签署即可。</p><h2 id="MVP-Kit-清关的注意事项"><a href="#MVP-Kit-清关的注意事项" class="headerlink" title="MVP Kit 清关的注意事项"></a>MVP Kit 清关的注意事项</h2><p>由于 MVP Kit 进入中国大陆地区需要在海关那边完成清关工作，于是需要进行清关申报。当 MVP Kit 进入境内后，你会收到 FEDEX 清关提醒的短信和联系电话，你需要通过短信中描述的电话号码去联系他们获取快递面单发票的扫描件的 PDF 文件。</p><p>获取 PDF 以后，你就可以开始根据短信上的提示开始在线清关申报了，其中你需要按照 PDF 的内容在 MVP Kit 内包含的物品清单，由于需要进行中文翻译，为了让后面阅读到文章的朋友在遇到类似的情况时可以轻松一点，我把我填写的相关内容整理成表以供参考。</p><p>P.S. 由于要写的内容还是比较多，为了能够让表格变得不那么长，于是一些重复内容我会在表前注明。</p><ul><li>每种物品的数量皆为 <code>1</code></li><li>每种物品的单位皆为 <code>件</code></li><li>每种物品的货币类型皆为 <code>美元</code></li><li>每种物品的品牌型号或用途来源皆为 <code>MVP Award Kit</code></li><li>每种物品的物品主类皆为 <code>其他物品</code></li><li>每种物品的物品子类皆为 <code>其他物品</code></li></ul><table><thead><tr><th>物品名称 (英文)</th><th>物品名称 (译文)</th><th>材料</th><th>单价值</th></tr></thead><tbody><tr><td>Crystal Award Gift</td><td>水晶奖礼品</td><td>塑料等</td><td>56.3</td></tr><tr><td>MVP Award Box</td><td>MVP奖励盒</td><td>塑料等</td><td>1</td></tr><tr><td>Certificate</td><td>证书</td><td>纸等</td><td>1</td></tr><tr><td>Certificate Holder</td><td>证书盒</td><td>塑料等</td><td>1</td></tr><tr><td>Certificate Plastic Cover</td><td>证书塑料套</td><td>塑料等</td><td>1</td></tr><tr><td>Lapel Pin</td><td>襟针</td><td>金属等</td><td>1</td></tr><tr><td>ID Card</td><td>证件卡</td><td>塑料等</td><td>1</td></tr><tr><td>Dark Navy Gift Box</td><td>礼品盒</td><td>塑料等</td><td>1</td></tr><tr><td>3-Panel Insert</td><td>三折页插页</td><td>纸等</td><td>1</td></tr><tr><td>Foam Insert</td><td>泡沫包装</td><td>泡沫等</td><td>1</td></tr><tr><td>MVP Sticker Sheet</td><td>MVP贴纸</td><td>纸等</td><td>1</td></tr><tr><td>NDA Packet Envelope</td><td>NDA资料袋信封</td><td>纸等</td><td>1</td></tr><tr><td>Notice to Receiver</td><td>收件人通知</td><td>纸等</td><td>1</td></tr><tr><td>Code of Conduct Letter</td><td>行为准则信</td><td>纸等</td><td>1</td></tr></tbody></table><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>希望本文内容可以帮到有需要的读者朋友，感谢阅读。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>公告</category>
+      
+      <category>生活</category>
+      
+      <category>体验</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>公告</tag>
+      
+      <tag>体验</tag>
+      
+      <tag>生活</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>部署现代 Windows 应用的注意事项</title>
+    <link href="/zh/2022/02/16/Notes-for-deploying-modern-Windows-apps/"/>
+    <url>/zh/2022/02/16/Notes-for-deploying-modern-Windows-apps/</url>
+    
+    <content type="html"><![CDATA[<p>在部署自己开发的 <a href="https://github.com/M2Team/NanaZip">NanaZip</a> 的时候，遇到了一些需要注意的事项。</p><p>由于希望后来者可以避坑，遂写了这篇文章。</p><p>使用 DISM 离线集成现代 Windows 应用需要获取对应应用的 Preinstallation Kit 包，因为里面包含了对应应用的许可证文件。</p><p>如果集成应用时没有指定或者使用正确的许可证文件，则该应用大概率会在系统映像第一次启动的时候会自动移除。</p><p>你要问，如果只有 msixbundle 的话，在 OOBE 或者装好系统后使用命令行或者应用安装器安装是否可行。</p><p>这个的确是可行的，然而前提是需要联网，因为其需要联网进行许可证相关的验证，否则虽然能成功安装，但是在联网之前无法运行。</p><p>希望以上信息能够让读者们得到一些帮助。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows 应用</category>
+      
+      <category>开发</category>
+      
+      <category>体验</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows 应用</tag>
+      
+      <tag>开发</tag>
+      
+      <tag>体验</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>当 VMware Workstation 与 Hyper-V 共存时的注意事项</title>
     <link href="/zh/2022/02/07/Notes-for-using-VMware-Workstation-with-Hyper-V-enabled/"/>
     <url>/zh/2022/02/07/Notes-for-using-VMware-Workstation-with-Hyper-V-enabled/</url>
@@ -1115,11 +1189,11 @@
     
     <tags>
       
+      <tag>生活</tag>
+      
       <tag>游戏</tag>
       
       <tag>赛博朋克 2077</tag>
-      
-      <tag>生活</tag>
       
       <tag>北京</tag>
       
