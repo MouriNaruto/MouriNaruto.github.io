@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Announcing I have been a Microsoft MVP</title>
+    <link href="/en/2022/02/16/Announcing-I-have-been-a-Microsoft-MVP/"/>
+    <url>/en/2022/02/16/Announcing-I-have-been-a-Microsoft-MVP/</url>
+    
+    <content type="html"><![CDATA[<p>I am proud to announce that I have been successfully elected to be the Microsoft MVP for Windows Development in February 2022, with two images to prove it.</p><p><img src="Certificate.png" alt="Certificate"></p><p><img src="Awardbox.png" alt="Crystal Trophy"></p><p>P.S. The crystal trophy is pretty cool.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Announcement</category>
+      
+      <category>Life</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Announcement</tag>
+      
+      <tag>Life</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Introducing Mile.FFmpeg - The merged FFmpeg dynamic linked library for the Windows</title>
     <link href="/en/2022/01/26/Introducing-Mile-FFmpeg-The-merged-FFmpeg-dynamic-linked-library-for-the-Windows/"/>
     <url>/en/2022/01/26/Introducing-Mile-FFmpeg-The-merged-FFmpeg-dynamic-linked-library-for-the-Windows/</url>
@@ -28,6 +57,8 @@
     
     <tags>
       
+      <tag>Announcement</tag>
+      
       <tag>Technologies</tag>
       
       <tag>Windows</tag>
@@ -35,8 +66,6 @@
       <tag>Windows Apps</tag>
       
       <tag>Development</tag>
-      
-      <tag>Announcement</tag>
       
     </tags>
     
