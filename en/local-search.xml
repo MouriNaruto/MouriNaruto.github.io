@@ -4,6 +4,47 @@
   
   
   <entry>
+    <title>Programming steps for launching an app with TrustedInstaller access token</title>
+    <link href="/en/2022/03/28/Programming-steps-for-launching-an-app-with-TrustedInstaller-access-token/"/>
+    <url>/en/2022/03/28/Programming-steps-for-launching-an-app-with-TrustedInstaller-access-token/</url>
+    
+    <content type="html"><![CDATA[<p>Hi, I’m Kenji Mouri, the creator of <a href="https://github.com/M2Team/NSudo">NSudo</a>, it’s one of the popular ways used forlaunching an app with TrustedInstaller access token.</p><p>I wonder to share you programming steps that how to launch an app with TrustedInstaller access token.</p><ol start="0"><li>Make sure your app which using to launch an app with TrustedInstaller access token is running as Administrator.</li><li>Enable the SeDebugPrivilege for the access token of the current process context.</li><li>Open and duplicate the access token of current session winlogon.exe process or session 0 smss.exe process.</li><li>Enable all privileges in the duplicated access token which was acquired from step 2, then impersonate with it.</li><li>Start TrustedInstaller service, open and duplicate the access token.</li><li>Set the session id to the current session id for the access token which was acquired from step 4.</li><li>Create process you want with the access token which was proceed with step 5.</li></ol><p>I hope the article can give some help for Windows desktop app developers. Thanks for reading.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Technologies</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows Apps</category>
+      
+      <category>Development</category>
+      
+      <category>Experience</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Technologies</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows Apps</tag>
+      
+      <tag>Development</tag>
+      
+      <tag>Experience</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Announcing I have been a Microsoft MVP</title>
     <link href="/en/2022/02/16/Announcing-I-have-been-a-Microsoft-MVP/"/>
     <url>/en/2022/02/16/Announcing-I-have-been-a-Microsoft-MVP/</url>
