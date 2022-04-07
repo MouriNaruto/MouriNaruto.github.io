@@ -4,6 +4,51 @@
   
   
   <entry>
+    <title>Introducing Mile.Milk - Some customized configurations for Linux Kernel</title>
+    <link href="/en/2022/03/30/Introducing-Mile-Milk-Some-customized-configurations-for-Linux-Kernel/"/>
+    <url>/en/2022/03/30/Introducing-Mile-Milk-Some-customized-configurations-for-Linux-Kernel/</url>
+    
+    <content type="html"><![CDATA[<p>In recent days, I have created a new project called <a href="https://github.com/ProjectMile/Mile.Milk">Mile.Milk</a>, provides some customized configurations for Linux Kernel, used in projects which were created by Kenji Mouri.</p><p>Note: Milk is the abbreviation of Mouri Internal Linux Kernel.</p><h2 id="Why-create-it"><a href="#Why-create-it" class="headerlink" title="Why create it"></a>Why create it</h2><p>I want to create a cloud-friendly and lightweight Linux distro for microservices base on .NET.</p><p>So, I need a customized Linux Kernel to achieve the goal.</p><h2 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use"></a>How to use</h2><p>Copy the configuration file you want to the root directory of Linux Kernel source code, and rename to <code>.config</code>.</p><h2 id="Afterword"><a href="#Afterword" class="headerlink" title="Afterword"></a>Afterword</h2><p>I hope you will enjoy it. Thanks for reading.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Technologies</category>
+      
+      <category>Linux</category>
+      
+      <category>Linux Kernel</category>
+      
+      <category>.NET</category>
+      
+      <category>Development</category>
+      
+      <category>Announcement</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Announcement</tag>
+      
+      <tag>Technologies</tag>
+      
+      <tag>Development</tag>
+      
+      <tag>Linux</tag>
+      
+      <tag>Linux Kernel</tag>
+      
+      <tag>.NET</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Programming steps for launching an app with TrustedInstaller access token</title>
     <link href="/en/2022/03/28/Programming-steps-for-launching-an-app-with-TrustedInstaller-access-token/"/>
     <url>/en/2022/03/28/Programming-steps-for-launching-an-app-with-TrustedInstaller-access-token/</url>
