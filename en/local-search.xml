@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>My opinion about someone boycotting 7-Zip</title>
+    <link href="/en/2022/06/30/My-opinion-about-someone-boycotting-7-Zip/"/>
+    <url>/en/2022/06/30/My-opinion-about-someone-boycotting-7-Zip/</url>
+    
+    <content type="html"><![CDATA[<p>In recent days, I have known someone wants to boycotting 7-Zip. Most of people including me think that their reasonsare nonsense. I write the comment in <a href="https://www.theregister.com/AMP/2022/06/27/7zip_compression_tool">https://www.theregister.com/AMP/2022/06/27/7zip_compression_tool</a> and make the backup in this article because I think it’s necessary for me to show my position.</p><figure class="highlight vbnet"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></div></td><td class="code"><pre><code class="hljs vbnet">Hi, NanaZip author here.<br><br>Actually, I am a faithful <span class="hljs-number">7</span>-Zip user since <span class="hljs-number">2011</span> <span class="hljs-keyword">when</span> I got the <span class="hljs-number">7</span>-Zip <span class="hljs-number">9.20</span> installer <span class="hljs-keyword">binary</span>, <span class="hljs-keyword">until</span> I created NanaZip <span class="hljs-keyword">in</span><br>late <span class="hljs-number">2021</span>. (But I am still a <span class="hljs-number">7</span>-Zip user <span class="hljs-keyword">in</span> strictly.) It<span class="hljs-comment">&#x27;s a professional tool for many people. I often use it to </span><br>pre-analyze the <span class="hljs-keyword">structure</span> <span class="hljs-keyword">of</span> executable file.<br><br>I can prove the source code <span class="hljs-keyword">of</span> <span class="hljs-number">7</span>-Zip mainline <span class="hljs-built_in">is</span> easy <span class="hljs-keyword">to</span> build <span class="hljs-built_in">and</span> <span class="hljs-number">100%</span> clean <span class="hljs-keyword">with</span> code-level modularize.<br><br><span class="hljs-keyword">When</span> I read the source code <span class="hljs-keyword">of</span> <span class="hljs-number">7</span>-Zip, I feel I am talking <span class="hljs-keyword">with</span> an old school software developer, <span class="hljs-keyword">with</span> the similar <br>feeling <span class="hljs-keyword">with</span> my senior. They both intend <span class="hljs-keyword">for</span> smaller binaries. So, I can understand why the author doesn<span class="hljs-comment">&#x27;t like &quot;/GS&quot;,</span><br><span class="hljs-string">&quot;/DYNAMICBASE&quot;</span> <span class="hljs-built_in">and</span> the compiler flags which can make <span class="hljs-keyword">binary</span> expansion. Also, they both care about old Windows <br>compatibility. So, I can understand why the author don<span class="hljs-comment">&#x27;t do some modernization work.</span><br><br>Based <span class="hljs-keyword">on</span> these, I created NanaZip because I want <span class="hljs-keyword">to</span> integrate some modern things which <span class="hljs-built_in">not</span> acceptable <span class="hljs-keyword">by</span> <span class="hljs-number">7</span>-Zip author.<br>(<span class="hljs-keyword">As</span> same <span class="hljs-keyword">as</span> my senior, he doesn<span class="hljs-comment">&#x27;t like App Model and Windows Runtime. But I want to use App Model and Windows Runtime</span><br>XAML <span class="hljs-keyword">to</span> modernize the user experience.)<br><br>Kenji Mouri<br></code></pre></td></tr></table></figure><h2 id="Afterword"><a href="#Afterword" class="headerlink" title="Afterword"></a>Afterword</h2><p>I have selected and made some patches to 7-Zip mainline from NanaZip. I hope the author can be merge it because it don’t need to break the old Windows compatibility.</p><p>For more information, please read <a href="https://sourceforge.net/p/sevenzip/discussion/45797/thread/68fd36919f/">https://sourceforge.net/p/sevenzip/discussion/45797/thread/68fd36919f/</a>.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Opinions</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Opinions</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Introducing NanaGet - Lightweight file transfer utility based on aria2 and XAML Islands</title>
     <link href="/en/2022/05/31/Introducing-NanaGet-Lightweight-file-transfer-utility-based-on-aria2-and-XAML-Islands/"/>
     <url>/en/2022/05/31/Introducing-NanaGet-Lightweight-file-transfer-utility-based-on-aria2-and-XAML-Islands/</url>
