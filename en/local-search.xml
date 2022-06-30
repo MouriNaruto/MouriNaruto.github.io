@@ -4,6 +4,47 @@
   
   
   <entry>
+    <title>Ensure software MIDI support existance for Windows</title>
+    <link href="/en/2022/06/30/Ensure-software-MIDI-support-existance-for-Windows/"/>
+    <url>/en/2022/06/30/Ensure-software-MIDI-support-existance-for-Windows/</url>
+    
+    <content type="html"><![CDATA[<p>When I am using Hyper-V Gen2 VM, I found I can’t play MIDI.</p><p>I did some investigation and found the solution.</p><p>Windows 10 Version 1903 and later have fixed that issue. So, it’s not necessary to use this.</p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Save the following content to a <code>.reg</code> file and double click it to import.</p><figure class="highlight abnf"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></div></td><td class="code"><pre><code class="hljs abnf">Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Drivers32]<br><span class="hljs-string">&quot;aux&quot;</span><span class="hljs-operator">=</span><span class="hljs-string">&quot;wdmaud.drv&quot;</span><br><span class="hljs-string">&quot;midi&quot;</span><span class="hljs-operator">=</span><span class="hljs-string">&quot;wdmaud.drv&quot;</span><br><span class="hljs-string">&quot;mixer&quot;</span><span class="hljs-operator">=</span><span class="hljs-string">&quot;wdmaud.drv&quot;</span><br><span class="hljs-string">&quot;wave&quot;</span><span class="hljs-operator">=</span><span class="hljs-string">&quot;wdmaud.drv&quot;</span><br><br>[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Drivers32]<br><span class="hljs-string">&quot;aux&quot;</span><span class="hljs-operator">=</span><span class="hljs-string">&quot;wdmaud.drv&quot;</span><br><span class="hljs-string">&quot;midi&quot;</span><span class="hljs-operator">=</span><span class="hljs-string">&quot;wdmaud.drv&quot;</span><br><span class="hljs-string">&quot;mixer&quot;</span><span class="hljs-operator">=</span><span class="hljs-string">&quot;wdmaud.drv&quot;</span><br><span class="hljs-string">&quot;wave&quot;</span><span class="hljs-operator">=</span><span class="hljs-string">&quot;wdmaud.drv&quot;</span><br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>Technologies</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows Apps</category>
+      
+      <category>Development</category>
+      
+      <category>Experience</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Technologies</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows Apps</tag>
+      
+      <tag>Development</tag>
+      
+      <tag>Experience</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>My opinion about someone boycotting 7-Zip</title>
     <link href="/en/2022/06/30/My-opinion-about-someone-boycotting-7-Zip/"/>
     <url>/en/2022/06/30/My-opinion-about-someone-boycotting-7-Zip/</url>
