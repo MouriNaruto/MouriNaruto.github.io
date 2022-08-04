@@ -4,6 +4,88 @@
   
   
   <entry>
+    <title>Introducing Nana Series Projects</title>
+    <link href="/en/2022/07/31/Introducing-Nana-Series-Projects/"/>
+    <url>/en/2022/07/31/Introducing-Nana-Series-Projects/</url>
+    
+    <content type="html"><![CDATA[<p>Since the success of NanaZip and replace NSudo as my representative project. I think it’s time to create and rename some projects with the Nana prefix.</p><h2 id="The-reason-of-use-Nana-prefix"><a href="#The-reason-of-use-Nana-prefix" class="headerlink" title="The reason of use Nana prefix"></a>The reason of use Nana prefix</h2><ul><li>Conform to the convention that most of M2-Team projects created by myself start with the N letter.</li><li>Unify the product line from M2-Team created by myself.</li><li>There are some connections between Nana and my real name. Kenji Mouri is only my pseudonym and Japanese name.</li></ul><h2 id="The-list-of-Nana-Series-Projects"><a href="#The-list-of-Nana-Series-Projects" class="headerlink" title="The list of Nana Series Projects"></a>The list of Nana Series Projects</h2><p>P.S. Sort by project release date.</p><ul><li><a href="https://github.com/M2Team/NanaZip">NanaZip</a></li><li><a href="https://github.com/M2Team/NanaRun">NanaRun</a></li><li><a href="https://github.com/M2Team/NanaGet">NanaGet</a></li><li><a href="https://github.com/M2Team/NanaBox">NanaBox</a></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Technologies</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows Apps</category>
+      
+      <category>Development</category>
+      
+      <category>Announcement</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Announcement</tag>
+      
+      <tag>Technologies</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows Apps</tag>
+      
+      <tag>Development</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>The reasons I created NanaBox</title>
+    <link href="/en/2022/07/31/The-reasons-I-created-NanaBox/"/>
+    <url>/en/2022/07/31/The-reasons-I-created-NanaBox/</url>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/M2Team/NanaBox">NanaBox</a> maybe the first open-source third-party lightweight XAML-basedout-of-box-experience oriented Hyper-V client based on Host Compute System API, Remote Desktop ActiveX controland XAML Islands.</p><p>But maybe you will ask me the reasons I created NanaBox, I will tell you in this article.</p><h2 id="Create-a-virtual-machine-software-for-personal-use"><a href="#Create-a-virtual-machine-software-for-personal-use" class="headerlink" title="Create a virtual machine software for personal use"></a>Create a virtual machine software for personal use</h2><p>Because the recent version of VMware Workstation has several issues which are not fixed after waiting at least half ayear. So, I think I should make a virtualization solution for myself, and it will be easier for me to do something I want because its implementation is controlled.</p><h2 id="Developing-projects-based-on-Hyper-V"><a href="#Developing-projects-based-on-Hyper-V" class="headerlink" title="Developing projects based on Hyper-V"></a>Developing projects based on Hyper-V</h2><p>Because Host Compute System API is only support Hyper-V Gen 2 Virtual Machine which is a typical UEFI Class 3 platform.I can use it for designing, developing. debugging and test some UEFI applications.</p><p>Also, Hyper-V is a typical paravirtualization solution which can use in large scale production environments. So I candiscover some ultra-lightweight solutions which can utilize the paravirtualization.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Technologies</category>
+      
+      <category>Windows</category>
+      
+      <category>Windows Apps</category>
+      
+      <category>Development</category>
+      
+      <category>Experience</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Technologies</tag>
+      
+      <tag>Windows</tag>
+      
+      <tag>Windows Apps</tag>
+      
+      <tag>Development</tag>
+      
+      <tag>Experience</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Ensure software MIDI support existance for Windows</title>
     <link href="/en/2022/06/30/Ensure-software-MIDI-support-existance-for-Windows/"/>
     <url>/en/2022/06/30/Ensure-software-MIDI-support-existance-for-Windows/</url>
